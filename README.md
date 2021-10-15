@@ -1,4 +1,4 @@
-# Medcloud-challenge-
+# Medcloud-challenge
 
 Goal
 To develop a web application to manage patient registers (Patient's name, birth date, email and address) using data persistence.
