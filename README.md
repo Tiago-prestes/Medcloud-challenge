@@ -11,11 +11,11 @@ To develop a web application to manage patient registers (Patient's name, birth 
 - You're free to choose which persistence mechanism will be used in the challenge (Relational or non-relational database, XML, text file, etc).
 
 ### Extra Points
-Deploy in a cloud platform of your choice.
-Cache the data in-browser.
-Use Material UI https://material-ui.com.
-Make the interface easy to use (UI/UX).
-Extra Points + 1
-Use AWS Free Tier on back-end (Lambda, API Gateway, DynamoDB or RDS).
+- Deploy in a cloud platform of your choice.
+- Cache the data in-browser.
+- Use Material UI https://material-ui.com.
+- Make the interface easy to use (UI/UX).
+- Extra Points + 1
+- Use AWS Free Tier on back-end (Lambda, API Gateway, DynamoDB or RDS).
 
 https://github.com/medcloudbr/development-challenge-four
