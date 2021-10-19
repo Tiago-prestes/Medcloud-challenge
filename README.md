@@ -17,5 +17,3 @@ To develop a web application to manage patient registers (Patient's name, birth 
 - Make the interface easy to use (UI/UX).
 - Extra Points + 1
 - Use AWS Free Tier on back-end (Lambda, API Gateway, DynamoDB or RDS).
-
-https://github.com/medcloudbr/development-challenge-four
