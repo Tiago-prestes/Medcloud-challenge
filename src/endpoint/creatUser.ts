@@ -1,5 +1,4 @@
 import { Request, Response } from 'express'
-import { BaseDatabase } from '../business/BaseDatabase'
 import { UserDataBase } from '../business/UserDataBase'
 import { User } from '../entities/User'
 import { IdGenerator } from '../services/IdGenerator'
@@ -19,10 +18,10 @@ export const createUser = async (req: Request, res: Response) => {
         )
 
         const userDatabase = new UserDataBase()
-        await userDatabase.create(newUser)
+        await userDatabase.createUser(newUser)
 
-        res.status(201).send({newUser})
+        res.status(201).send({ newUser })
     } catch (error: any) {
-        res.status(500).send({message: error.message})
+        res.status(500).send({ message: error.message })
     }
 }

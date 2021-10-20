@@ -8,7 +8,6 @@ app.use(cors())
 
 const server = app.listen(process.env.PORT || 3003, () => {
     if (server) {
-       const address = server.address()
        console.log(`Server is running in http://localhost: 3003`)
     } else {
        console.error(`Failure upon starting server.`)
