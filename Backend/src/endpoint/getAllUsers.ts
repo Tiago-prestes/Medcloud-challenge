@@ -1,6 +1,5 @@
 import { Request, Response } from "express"
 import { UserDataBase } from "../business/UserDataBase"
-import { User } from "../entities/User"
 
 export const getAllUser = async ( req: Request, res: Response) => {
 
