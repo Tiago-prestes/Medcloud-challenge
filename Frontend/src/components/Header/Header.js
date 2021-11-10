@@ -1,5 +1,6 @@
+import { Button } from '@material-ui/core'
 import React from 'react'
-import { ImageLogo, LogoContainer, MainHeader, TextLogo } from './styled'
+import { ImageLogo, LogoContainer, MainHeader, TextLogo, ButtonsContainer } from './styled'
 
 export const Header = () => {
     return (
@@ -12,6 +13,18 @@ export const Header = () => {
                     <p>medcloud</p>
                 </TextLogo>
             </LogoContainer>
+            <ButtonsContainer>
+            <Button
+            color='primary'
+            variant='outlined'
+            size='small'
+            >Análises</Button>
+            <Button
+            color='primary'
+            variant='outlined'
+            size='small'
+            >Usuários</Button>
+            </ButtonsContainer>
         </MainHeader>
     )
 }
