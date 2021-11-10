@@ -1,10 +1,3 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Medcloud Challenge" />
-
-  &#xa0;
-
-  <!-- <a href="https://medcloudchallenge.netlify.app">Demo</a> -->
-</div>
 
 <h1 align="center">Medcloud Challenge</h1>
 
