@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import GlobalStateContext from './GlobalStateContext'
 import axios from "axios"
+import { BASE_URL } from '../constants/urls'
 
 
 const GlobalState = (props) => {
     const [users, setUsers] = useState([])
-
+    
     useEffect(() => {
-        axios.get("https://jsonplaceholder.typicode.com/users")
+        axios.get(`${BASE_URL}/listusers`)
             .then((res) => {
                 setUsers(res.data)
                 console.log(res.data)

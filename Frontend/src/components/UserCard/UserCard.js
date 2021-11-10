@@ -29,7 +29,7 @@ export const UserCard = () => {
     { field: 'name', headerName: 'Name', width: 180 },
     { field: 'email', headerName: 'Email', width: 180 },
     { field: 'address', headerName: 'Address', width: 180 },
-    { field: 'Birthdate', headerName: 'Birthdate', width: 145 }
+    { field: 'birthdate', headerName: 'Birthdate', width: 145 }
   ]
 
   return (
