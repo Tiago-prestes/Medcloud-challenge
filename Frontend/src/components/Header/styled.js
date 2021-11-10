@@ -4,6 +4,7 @@ export const MainHeader = styled.div`
     display: flex;
     background-color: white;
     border-bottom: 1px solid #D6D6D6;
+    
 `
 
 export const LogoContainer = styled.div`
@@ -29,4 +30,8 @@ export const ImageLogo = styled.div`
     img {
             width: 4vw;
         }
+`
+
+export const ButtonsContainer = styled.div`
+    display: flex;
 `

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import GlobalStateContext from '../../global/GlobalStateContext';
+import { Button } from '@mui/material';
 
 export const UserCard = () => {
   const { users } = useContext(GlobalStateContext)
@@ -8,19 +9,15 @@ export const UserCard = () => {
   const [selectionModel, setSelectionModel] = useState([])
 
   useEffect(() => {
+    const newList = []
 
-    
-      const newList = []
-      
-      if(selectionModel.length >= 1) {
-        newList.push(selectionModel)
-        setSelectedRows(newList)
-      }
-    
-    console.log("aqui", selectedRows)
+    newList.push(selectionModel)
+    setSelectedRows(newList)
+
 
   }, [selectionModel])
 
+  console.log("fora", selectedRows)
 
 
 
@@ -34,6 +31,12 @@ export const UserCard = () => {
 
   return (
     <div style={{ height: 400, width: '65%' }}>
+      <Button
+      color='primary'
+      variant='contained'
+      >
+      Exportar para Análise
+      </Button>
       <DataGrid
         rows={users}
         columns={columns}
@@ -42,6 +45,7 @@ export const UserCard = () => {
         NoRowsOverlay
         onSelectionModelChange={(newSelectionModel) => { setSelectionModel(newSelectionModel) }}
       />
+      
     </div>
   );
 }
