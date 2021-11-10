@@ -37,20 +37,14 @@
 - Extra Points + 1
 - Use AWS Free Tier on back-end (Lambda, API Gateway, DynamoDB or RDS).
 
-## :sparkles: Features ##
-
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
-
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Material-Ui](https://mui.com/)
 
 ## :white_check_mark: Requirements ##
 
@@ -63,7 +57,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 $ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/medcloud-challenge
 
 # Access
-$ cd medcloud-challenge
+$ cd medcloud-challenge  - to access Frontend (cd Frontend) or to access Backend (cd Backend)
 
 # Install dependencies
 $ yarn
@@ -79,7 +73,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/{{tiago-prestes}}" target="_blank">{{YOUR_NAME}}</a>
 
 &#xa0;
 
