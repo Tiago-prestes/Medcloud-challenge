@@ -22,6 +22,7 @@ export const UserCard = () => {
         }
       })
     })
+    handleClick()
   }
 
   const handleClick = () => {
@@ -40,7 +41,7 @@ export const UserCard = () => {
       <Button
         color='primary'
         variant='contained'
-        onClick={addAnalise, handleClick}
+        onClick={addAnalise}
       >
         Exportar para Análise
       </Button>
