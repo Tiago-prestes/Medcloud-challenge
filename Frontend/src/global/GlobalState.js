@@ -17,20 +17,14 @@ const GlobalState = (props) => {
       ]
 
     useEffect(() => {
-        getUsersName()
-    }, [])
-
-    const getUsersName = () => {
         axios.get(`${BASE_URL}/listusers`)
-            .then((res) => {
-                setUsers(res.data)
-            })
-            .catch((error) => {
-                console.log(error.message)
-            })
-    }
-
-    console.log("Pegando", users)
+        .then((res) => {
+            setUsers(res.data)
+        })
+        .catch((error) => {
+            console.log(error.response)
+        })
+    }, [])
 
     const data = {  users, setUsers, analise, setAnalise, columns }
     return (
