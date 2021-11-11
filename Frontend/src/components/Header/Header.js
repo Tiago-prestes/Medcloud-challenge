@@ -1,8 +1,12 @@
-import { Button } from '@material-ui/core'
 import React from 'react'
+import { useHistory } from "react-router-dom"
 import { ImageLogo, LogoContainer, MainHeader, TextLogo, ButtonsContainer } from './styled'
+import { Button } from '@material-ui/core'
+import { goToAnalises, goToUserPage } from '../../routes/coordinator'
 
 export const Header = () => {
+    const history = useHistory()
+
     return (
         <MainHeader>
             <LogoContainer>
@@ -18,11 +22,13 @@ export const Header = () => {
             color='primary'
             variant='outlined'
             size='small'
+            onClick={() => goToAnalises(history)}
             >Análises</Button>
             <Button
             color='primary'
             variant='outlined'
             size='small'
+            onClick={() => goToUserPage(history)}
             >Usuários</Button>
             </ButtonsContainer>
         </MainHeader>

@@ -34,4 +34,7 @@ export const ImageLogo = styled.div`
 
 export const ButtonsContainer = styled.div`
     display: flex;
+    margin: 0 auto;
+    width: 14vw;
+    justify-content: space-evenly;
 `
