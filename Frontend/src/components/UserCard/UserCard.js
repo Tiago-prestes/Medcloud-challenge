@@ -8,7 +8,7 @@ import MuiAlert from '@mui/material/Alert';
 import { Alert } from '@material-ui/core';
 
 export const UserCard = () => {
-  const { users, setUsers, analise, setAnalise, columns } = useContext(GlobalStateContext)
+  const { users, setAnalise, columns } = useContext(GlobalStateContext)
   const [selectionModel, setSelectionModel] = useState([])
   const [open, setOpen] = useState(false);
 

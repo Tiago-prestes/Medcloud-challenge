@@ -7,7 +7,7 @@ import { Alert, Button } from '@material-ui/core';
 
 
 export const AnalisePage = () => {
-    const { users, setUsers, analise, setAnalise, columns } = useContext(GlobalStateContext)
+    const { analise, setAnalise, columns } = useContext(GlobalStateContext)
     const [selectionModel, setSelectionModel] = useState([])
 
 
@@ -17,7 +17,6 @@ export const AnalisePage = () => {
             const analiseIndex = analise.findIndex((user) => user.id === item)
             const newAnaliseList = [...analise]
             newAnaliseList.splice(analiseIndex, 1)
-            console.log('newlist', newAnaliseList)
             setAnalise(newAnaliseList)
         })
     }
